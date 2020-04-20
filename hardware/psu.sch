@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+LIBS:electronic_load-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3900 3350 0    50   Input ~ 0
+12V
+$Comp
+L Regulator_Linear:TLV1117-33 U2
+U 1 1 5DBC390D
+P 5800 3550
+F 0 "U2" H 5800 3792 50  0000 C CNN
+F 1 "TLV1117-33" H 5800 3701 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5800 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv1117.pdf" H 5800 3550 50  0001 C CNN
+	1    5800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DBC391B
+P 5400 3750
+F 0 "C4" H 5515 3796 50  0000 L CNN
+F 1 "100n" H 5515 3705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5438 3600 50  0001 C CNN
+F 3 "~" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3600 5100 3550
+Wire Wire Line
+	5400 3600 5400 3550
+Wire Wire Line
+	6200 3600 6200 3550
+Wire Wire Line
+	6500 3600 6500 3550
+Wire Wire Line
+	6500 3550 6200 3550
+Wire Wire Line
+	6200 3550 6100 3550
+Connection ~ 6200 3550
+Wire Wire Line
+	5500 3550 5400 3550
+Connection ~ 5400 3550
+Wire Wire Line
+	6950 3550 6500 3550
+Connection ~ 6500 3550
+Wire Wire Line
+	5100 3550 5400 3550
+Connection ~ 5100 3550
+Wire Wire Line
+	6200 3550 6200 3200
+Wire Wire Line
+	6200 3200 5950 3200
+Wire Wire Line
+	5650 3200 5400 3200
+Wire Wire Line
+	5400 3200 5400 3550
+Text HLabel 6050 4450 3    50   Output ~ 0
+GND
+Wire Wire Line
+	5100 4000 5400 4000
+Wire Wire Line
+	5400 3900 5400 4000
+Wire Wire Line
+	5100 3900 5100 4000
+Wire Wire Line
+	5400 4000 5800 4000
+Wire Wire Line
+	5800 4000 5800 3850
+Connection ~ 5400 4000
+Wire Wire Line
+	5800 4000 6050 4000
+Wire Wire Line
+	6200 3900 6200 4000
+Connection ~ 5800 4000
+Wire Wire Line
+	6200 4000 6500 4000
+Wire Wire Line
+	6500 3900 6500 4000
+Connection ~ 6200 4000
+Connection ~ 6050 4000
+Wire Wire Line
+	6050 4000 6200 4000
+Text HLabel 6950 3300 1    50   Output ~ 0
+3.3V
+Wire Wire Line
+	6950 3300 6950 3550
+$Comp
+L Device:C C18
+U 1 1 5DBC3939
+P 6500 3750
+F 0 "C18" H 6615 3796 50  0000 L CNN
+F 1 "100n" H 6615 3705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6538 3600 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DCD7DF4
+P 5100 3750
+F 0 "C3" H 5215 3796 50  0000 L CNN
+F 1 "1u" H 5215 3705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5138 3600 50  0001 C CNN
+F 3 "~" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5DCD7E64
+P 6200 3750
+F 0 "C17" H 6315 3796 50  0000 L CNN
+F 1 "1u" H 6315 3705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6238 3600 50  0001 C CNN
+F 3 "~" H 6200 3750 50  0001 C CNN
+	1    6200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5DBC397C
+P 5800 3200
+F 0 "D2" H 5800 3416 50  0000 C CNN
+F 1 "1n4148" H 5800 3325 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L diode:BAT54C D1
+U 1 1 5DAF6505
+P 4650 3350
+F 0 "D1" H 4650 3575 50  0000 C CNN
+F 1 "BAT54C" H 4650 3484 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4725 3475 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 4570 3350 50  0001 C CNN
+	1    4650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3550 5100 3550
+NoConn ~ 4950 3350
+Wire Wire Line
+	4300 3350 4350 3350
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5DAFB616
+P 4200 3350
+F 0 "F1" V 3995 3350 50  0000 C CNN
+F 1 "0.25A" V 4086 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" H 4250 3150 50  0001 L CNN
+F 3 "~" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 3350 4100 3350
+Wire Wire Line
+	6050 4000 6050 4300
+Text Label 4950 3550 0    50   ~ 0
+V12_fused
+$Comp
+L Device:LED D4
+U 1 1 5E9C65EB
+P 6950 3700
+F 0 "D4" V 6989 3583 50  0000 R CNN
+F 1 "LED" V 6898 3583 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 6950 3700 50  0001 C CNN
+F 3 "~" H 6950 3700 50  0001 C CNN
+	1    6950 3700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6950 3550
+$Comp
+L Device:R R16
+U 1 1 5E9C732D
+P 6950 4100
+F 0 "R16" H 7020 4146 50  0000 L CNN
+F 1 "200R" H 7020 4055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6880 4100 50  0001 C CNN
+F 3 "~" H 6950 4100 50  0001 C CNN
+	1    6950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3850 6950 3950
+Wire Wire Line
+	6950 4250 6950 4300
+Wire Wire Line
+	6950 4300 6050 4300
+Connection ~ 6050 4300
+Wire Wire Line
+	6050 4300 6050 4450
+$EndSCHEMATC
