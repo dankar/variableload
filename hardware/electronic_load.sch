@@ -251,17 +251,6 @@ F 3 "" H 8400 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 5E987F12
-P 8850 1500
-F 0 "J1" H 8930 1492 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 8930 1401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8850 1500 50  0001 C CNN
-F 3 "~" H 8850 1500 50  0001 C CNN
-	1    8850 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR013
 U 1 1 5E9889ED
 P 8500 1750
@@ -900,4 +889,15 @@ Wire Wire Line
 Wire Wire Line
 	4200 6450 4400 6450
 Connection ~ 4200 5750
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5E987F12
+P 8850 1600
+F 0 "J1" H 8930 1592 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8930 1501 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8850 1600 50  0001 C CNN
+F 3 "~" H 8850 1600 50  0001 C CNN
+	1    8850 1600
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
