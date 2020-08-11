@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\antennaanalyzernx\\code\\antennaanalyzer"
+		},
+		{
+			"name": "Spot welder",
+			"path": "..\\..\\..\\..\\..\\Spot welder"
+		},
+		{
+			"name": "DoorCounter",
+			"path": "C:\\Users\\danie\\Documents\\PlatformIO\\Projects\\DoorCounter"
+		},
+		{
+			"name": "load",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"typeinfo": "cpp",
+			"system_error": "cpp",
+			"xlocale": "cpp"
+		}
+	}
+}

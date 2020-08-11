@@ -512,8 +512,6 @@ Text Label 6300 3850 0    50   ~ 0
 Current_feedback_N
 Wire Wire Line
 	7300 3200 7300 3850
-Wire Wire Line
-	7750 3150 7750 3300
 $Comp
 L Device:R R17
 U 1 1 5E9B2211
@@ -742,4 +740,11 @@ Wire Wire Line
 	7300 1850 7850 1850
 Wire Wire Line
 	7300 1850 7300 2050
+Wire Wire Line
+	7750 3150 7750 3200
+Wire Wire Line
+	7300 3200 7750 3200
+Connection ~ 7750 3200
+Wire Wire Line
+	7750 3200 7750 3300
 $EndSCHEMATC
