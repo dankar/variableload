@@ -1,26 +1,30 @@
 {
 	"folders": [
 		{
-			"path": "..\\..\\..\\..\\..\\antennaanalyzernx\\code\\antennaanalyzer"
+			"name": "redeye-receiver",
+			"path": "..\\..\\..\\..\\..\\redeye-receiver"
 		},
 		{
-			"name": "Spot welder",
-			"path": "..\\..\\..\\..\\..\\Spot welder"
+			"path": "..\\..\\..\\..\\..\\redeye-test"
 		},
 		{
-			"name": "DoorCounter",
-			"path": "C:\\Users\\danie\\Documents\\PlatformIO\\Projects\\DoorCounter"
+			"name": "blinker",
+			"path": "..\\..\\..\\..\\..\\blinker"
 		},
 		{
-			"name": "load",
-			"path": ".."
+			"name": "redeye-printer",
+			"path": "..\\..\\..\\..\\..\\redeye-printer"
 		}
 	],
 	"settings": {
 		"files.associations": {
 			"typeinfo": "cpp",
 			"system_error": "cpp",
-			"xlocale": "cpp"
+			"xlocale": "cpp",
+			"array": "cpp",
+			"vector": "cpp",
+			"xstring": "cpp",
+			"xutility": "cpp"
 		}
 	}
 }

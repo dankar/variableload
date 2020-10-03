@@ -2,7 +2,7 @@
 #include "buttons.h"
 #include "pins.h"
 
-#define DEBOUNCE_DELAY 50
+#define DEBOUNCE_DELAY 10
 
 typedef struct
 {

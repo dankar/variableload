@@ -8,6 +8,7 @@
 #include "load_control.h"
 #include "menu.h"
 #include "sensors.h"
+#include "sound.h"
 
 U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE | U8G_I2C_OPT_DEV_0);
 
@@ -26,10 +27,18 @@ void setup() {
   pinMode(OUTPUT_ENABLE, OUTPUT);
   pinMode(CURRENT_SET, OUTPUT);
   pinMode(SPEAKER_DRIVE, OUTPUT);
+  pinMode(LED_MAIN, OUTPUT);
+  pinMode(LED_WARNING_ONE, OUTPUT);
+  pinMode(LED_WARNING_TWO, OUTPUT);
   analogReference(INTERNAL2V56);
   Serial.begin(115200);
-
   one_wire_setup();
+
+	digitalWrite(LED_WARNING_ONE, HIGH);
+	digitalWrite(LED_WARNING_TWO, HIGH);
+  sound_play_note(440, 100);
+  sound_play_note(450, 100);
+  sound_play_note(460, 100);
 }
 
 int fadeValue = 0;
